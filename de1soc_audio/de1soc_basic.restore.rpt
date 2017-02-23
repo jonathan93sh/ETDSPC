@@ -1,0 +1,110 @@
+Restore Archived Project report for de1soc_basic
+Wed Feb 15 09:34:56 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Wed Feb 15 09:34:56 2017 ;
+; Revision Name                   ; de1soc_basic                          ;
+; Top-level Entity Name           ; de1soc_audio_no_hps_top               ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/projects/dspc/dspc_work/de1soc_audio_no_hps/de1soc_audio.qar' into the 'C:\\projects\\dspc\\ex_de1soc\\de1soc_audio/' directory
+Info: Generated report 'de1soc_basic.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/16.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 740 megabytes
+    Info: Processing ended: Wed Feb 15 09:34:56 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------------------------------------+
+; Files Restored                                                         ;
++------------------------------------------------------------------------+
+; File Name                                                              ;
++------------------------------------------------------------------------+
+; qar_info.json                                                          ;
+; assignment_defaults.qdf                                                ;
+; audio_clk_config.vhd                                                   ;
+; de1soc_audio_hps_top.vhd                                               ;
+; de1soc_audio_no_hps_top.vhd                                            ;
+; de1soc_basic.qpf                                                       ;
+; de1soc_basic.qsf                                                       ;
+; ip/altsource_probe/hps_reset.qip                                       ;
+; ip/altsource_probe/hps_reset.v                                         ;
+; ip/altsource_probe/hps_reset_bb.v                                      ;
+; ip/audio_clk/audio_clk.debuginfo                                       ;
+; ip/audio_clk/audio_clk.qip                                             ;
+; ip/audio_clk/audio_clk.vhd                                             ;
+; ip/audio_clk/submodules/altera_up_avalon_reset_from_locked_signal.v    ;
+; ip/audio_clk/submodules/audio_clk_audio_pll_0.v                        ;
+; ip/audio_clk/submodules/audio_clk_audio_pll_0_audio_pll.qip            ;
+; ip/audio_clk/submodules/audio_clk_audio_pll_0_audio_pll.v              ;
+; ip/audio_config/audio_config.qip                                       ;
+; ip/audio_config/audio_config.vhd                                       ;
+; ip/audio_config/submodules/altera_up_av_config_auto_init.v             ;
+; ip/audio_config/submodules/altera_up_av_config_auto_init_d5m.v         ;
+; ip/audio_config/submodules/altera_up_av_config_auto_init_dc2.v         ;
+; ip/audio_config/submodules/altera_up_av_config_auto_init_lcm.v         ;
+; ip/audio_config/submodules/altera_up_av_config_auto_init_ltm.v         ;
+; ip/audio_config/submodules/altera_up_av_config_auto_init_ob_adv7180.v  ;
+; ip/audio_config/submodules/altera_up_av_config_auto_init_ob_adv7181.v  ;
+; ip/audio_config/submodules/altera_up_av_config_auto_init_ob_audio.v    ;
+; ip/audio_config/submodules/altera_up_av_config_auto_init_ob_de1_soc.v  ;
+; ip/audio_config/submodules/altera_up_av_config_auto_init_ob_de2_115.v  ;
+; ip/audio_config/submodules/altera_up_av_config_serial_bus_controller.v ;
+; ip/audio_config/submodules/altera_up_slow_clock_generator.v            ;
+; ip/audio_config/submodules/audio_config_audio_and_video_config_0.v     ;
+; ip/edge_detect/altera_edge_detector.v                                  ;
+; reset_logic.vhd                                                        ;
+; soc_system.qsys                                                        ;
+; soc_system_timing.sdc                                                  ;
++------------------------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

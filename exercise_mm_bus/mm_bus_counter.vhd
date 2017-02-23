@@ -1,0 +1,108 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity mm_bus_counter is
+  
+  port (
+    -- Avalon Interface
+    csi_clockreset_clk     : in  std_logic;                     -- Avalon Clk
+    csi_clockreset_reset_n : in  std_logic;                     -- Avalon Reset
+    avs_s1_write           : in  std_logic;                     -- Avalon wr
+    avs_s1_read            : in  std_logic;                     -- Avalon rd
+    avs_s1_chipselect      : in  std_logic;                     -- Avalon cs
+    avs_s1_address         : in  std_logic_vector(7 downto 0);  -- Avalon address
+    avs_s1_writedata       : in  std_logic_vector(15 downto 0); -- Avalon wr data
+    avs_s1_readdata        : out std_logic_vector(15 downto 0); -- Avalon rd data
+    ins_irq0_irq           : out std_logic;                     -- Avalon irq
+
+  -- External Inputs
+  input_irq     : in std_logic;
+  input_counter : in std_logic);
+
+end mm_bus_counter;
+
+architecture behaviour of mm_bus_counter is
+
+-- Signal Declarations
+
+--signal slv_reg0 : std_logic_vector(15 downto 0); -- don't need a register for a read-only
+signal slv_reg1 : std_logic_vector(15 downto 0);
+
+signal c_value : unsigned(15 downto 0);
+
+signal input_counter_pre : std_logic;
+
+begin
+
+
+	counter_proc: process(csi_clockreset_clk, csi_clockreset_reset_n)
+	begin
+		if csi_clockreset_reset_n = '0' then
+			c_value <= (others => '0');
+			input_counter_pre <= '0';
+		elsif rising_edge(csi_clockreset_clk) then
+			if input_counter = '1' and input_counter_pre = '0' then
+				c_value <= c_value + 1;
+			end if;
+			
+			if slv_reg1(0) = '1' then
+				c_value <= (others => '0');
+			end if;
+			
+			input_counter_pre <= input_counter;
+		end if;
+	end process;
+	
+	irq_proc: process(csi_clockreset_clk, csi_clockreset_reset_n)
+	begin
+		if csi_clockreset_reset_n = '0' then
+			ins_irq0_irq <= '0';
+		elsif rising_edge(csi_clockreset_clk) then
+			ins_irq0_irq <= input_irq;
+		end if;
+	end process;
+	
+	read_proc: process(csi_clockreset_clk, csi_clockreset_reset_n)
+	begin
+		if csi_clockreset_reset_n = '0' then
+			avs_s1_readdata <= (others => 'Z');
+		elsif rising_edge(csi_clockreset_clk) then
+			avs_s1_readdata <= (others => 'Z');
+			if avs_s1_read = '1' and avs_s1_chipselect = '1' then
+				case avs_s1_address is
+				when "00000000" =>
+					avs_s1_readdata <= std_logic_vector(c_value);
+				when "00000001" =>
+					avs_s1_readdata <= slv_reg1;
+				when others => 
+					avs_s1_readdata <= (others => '0');
+				end case;
+			end if;
+		end if;
+	end process;
+	
+	write_proc: process(csi_clockreset_clk, csi_clockreset_reset_n)
+	begin
+		if csi_clockreset_reset_n = '0' then
+			--slv_reg0 <= (others => '0');
+			slv_reg1 <= (others => '0');
+		elsif rising_edge(csi_clockreset_clk) then
+			--slv_reg0 <= slv_reg0;
+			slv_reg1 <= (others => '0'); -- auto reset
+			if avs_s1_write = '1' and avs_s1_chipselect = '1' then
+				case avs_s1_address is
+				when "00000000" =>
+					--slv_reg0 <= avs_s1_writedata; --read-only
+				when "00000001" =>
+					slv_reg1 <= avs_s1_writedata;
+				when others => NULL;
+				end case; 
+			end if;
+		end if;
+	end process;
+
+-- Functionality 
+  
+  
+end behaviour;

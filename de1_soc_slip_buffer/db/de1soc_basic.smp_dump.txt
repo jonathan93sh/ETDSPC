@@ -1,0 +1,59 @@
+
+State Machine - |de1soc_audio_no_hps_top|audio_system:comp_audio_system|elastic_buffer:comp_elastic_buffer|push_synchronizer:push_synchronizer_2|RX_curr_state
+Name RX_curr_state.receiving RX_curr_state.wait_faa RX_curr_state.wait_fr RX_curr_state.init 
+RX_curr_state.init 0 0 0 0 
+RX_curr_state.wait_fr 0 0 1 1 
+RX_curr_state.wait_faa 0 1 0 1 
+RX_curr_state.receiving 1 0 0 1 
+
+State Machine - |de1soc_audio_no_hps_top|audio_system:comp_audio_system|elastic_buffer:comp_elastic_buffer|push_synchronizer:push_synchronizer_2|TX_curr_state
+Name TX_curr_state.ready TX_curr_state.transmit TX_curr_state.init 
+TX_curr_state.init 0 0 0 
+TX_curr_state.transmit 0 1 1 
+TX_curr_state.ready 1 0 1 
+
+State Machine - |de1soc_audio_no_hps_top|audio_system:comp_audio_system|elastic_buffer:comp_elastic_buffer|push_synchronizer:push_synchronizer_1|RX_curr_state
+Name RX_curr_state.receiving RX_curr_state.wait_faa RX_curr_state.wait_fr RX_curr_state.init 
+RX_curr_state.init 0 0 0 0 
+RX_curr_state.wait_fr 0 0 1 1 
+RX_curr_state.wait_faa 0 1 0 1 
+RX_curr_state.receiving 1 0 0 1 
+
+State Machine - |de1soc_audio_no_hps_top|audio_system:comp_audio_system|elastic_buffer:comp_elastic_buffer|push_synchronizer:push_synchronizer_1|TX_curr_state
+Name TX_curr_state.ready TX_curr_state.transmit TX_curr_state.init 
+TX_curr_state.init 0 0 0 
+TX_curr_state.transmit 0 1 1 
+TX_curr_state.ready 1 0 1 
+
+State Machine - |de1soc_audio_no_hps_top|audio_system:comp_audio_system|iis2st:comp_iis2st|s2i_state
+Name s2i_state.wait_for_daclrck_high s2i_state.latch_word s2i_state.sample_bit s2i_state.idle 
+s2i_state.idle 0 0 0 0 
+s2i_state.sample_bit 0 0 1 1 
+s2i_state.latch_word 0 1 0 1 
+s2i_state.wait_for_daclrck_high 1 0 0 1 
+
+State Machine - |de1soc_audio_no_hps_top|audio_system:comp_audio_system|iis2st:comp_iis2st|i2s_state
+Name i2s_state.wait_for_daclrck_high i2s_state.latch_word i2s_state.sample_bit i2s_state.idle 
+i2s_state.idle 0 0 0 0 
+i2s_state.sample_bit 0 0 1 1 
+i2s_state.latch_word 0 1 0 1 
+i2s_state.wait_for_daclrck_high 1 0 0 1 
+
+State Machine - |de1soc_audio_no_hps_top|audio_clk_config:comp_audio_clk_config|audio_config:u1|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer
+Name s_serial_transfer.STATE_6_POST_READ s_serial_transfer.STATE_5_READ_TRANSFER s_serial_transfer.STATE_4_PRE_READ s_serial_transfer.STATE_3_POST_WRITE s_serial_transfer.STATE_2_WRITE_TRANSFER s_serial_transfer.STATE_1_PRE_WRITE s_serial_transfer.STATE_0_IDLE 
+s_serial_transfer.STATE_0_IDLE 0 0 0 0 0 0 0 
+s_serial_transfer.STATE_1_PRE_WRITE 0 0 0 0 0 1 1 
+s_serial_transfer.STATE_2_WRITE_TRANSFER 0 0 0 0 1 0 1 
+s_serial_transfer.STATE_3_POST_WRITE 0 0 0 1 0 0 1 
+s_serial_transfer.STATE_4_PRE_READ 0 0 1 0 0 0 1 
+s_serial_transfer.STATE_5_READ_TRANSFER 0 1 0 0 0 0 1 
+s_serial_transfer.STATE_6_POST_READ 1 0 0 0 0 0 1 
+
+State Machine - |de1soc_audio_no_hps_top|audio_clk_config:comp_audio_clk_config|audio_config:u1|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|s_serial_protocol
+Name s_serial_protocol.STATE_5_STOP_BIT s_serial_protocol.STATE_4_TRANSFER s_serial_protocol.STATE_3_START_BIT s_serial_protocol.STATE_2_RESTART_BIT s_serial_protocol.STATE_1_INITIALIZE s_serial_protocol.STATE_0_IDLE 
+s_serial_protocol.STATE_0_IDLE 0 0 0 0 0 0 
+s_serial_protocol.STATE_1_INITIALIZE 0 0 0 0 1 1 
+s_serial_protocol.STATE_2_RESTART_BIT 0 0 0 1 0 1 
+s_serial_protocol.STATE_3_START_BIT 0 0 1 0 0 1 
+s_serial_protocol.STATE_4_TRANSFER 0 1 0 0 0 1 
+s_serial_protocol.STATE_5_STOP_BIT 1 0 0 0 0 1 

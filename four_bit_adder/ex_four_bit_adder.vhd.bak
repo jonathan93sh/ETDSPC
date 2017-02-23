@@ -1,0 +1,25 @@
+-- Top level wrapper entity
+library  ieee;
+use ieee.std_logic_1164.all;
+
+entity exercise_four_bit_adder is
+	port(SW   : in  std_logic_vector(7 downto 0);
+		 LEDR : out std_logic_vector(4 downto 0)); 
+end exercise_four_bit_adder;
+
+architecture structural of exercise_four_bit_adder is
+signal a, b : std_logic_vector(3 downto 0);
+ begin
+	
+	a <= SW(7 downto 4);
+	b <= SW(3 downto 0);
+	
+	fba : entity work.four_bit_adder port map(a => a, b => b, c => leds);
+	
+
+	
+ -- Instantiate your top-level entity here 
+ -- and map its ports to DE2 board 
+ -- connections, ex SW(0) and LEDR(1)
+	
+	end structural;

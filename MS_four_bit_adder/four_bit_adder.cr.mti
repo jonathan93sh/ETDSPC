@@ -1,0 +1,47 @@
+C:/ETDSPC/git/ETDSPC/four_bit_adder/four_bit_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\ETDSPC\git\ETDSPC\four_bit_adder\four_bit_adder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity four_bit_adder
+-- Compiling architecture structural of four_bit_adder
+-- Loading entity full_adder
+
+} {} {}} C:/ETDSPC/git/ETDSPC/MS_four_bit_adder/TB_four_bit_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\ETDSPC\git\ETDSPC\MS_four_bit_adder\TB_four_bit_adder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity TB_four_bit_adder
+-- Compiling architecture testbench of TB_four_bit_adder
+-- Loading entity four_bit_adder
+
+} {} {}} C:/ETDSPC/git/ETDSPC/MS_four_bit_adder/TB_four_bit_adder_TEXTIO.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ETDSPC/git/ETDSPC/MS_four_bit_adder/TB_four_bit_adder_TEXTIO.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity TB_four_bit_adder_TEXTIO
+-- Compiling architecture testbench of TB_four_bit_adder_TEXTIO
+-- Loading entity four_bit_adder
+
+} {} {}} C:/ETDSPC/git/ETDSPC/four_bit_adder/half_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ETDSPC/git/ETDSPC/four_bit_adder/half_adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity half_adder
+-- Compiling architecture rtl of half_adder
+
+} {} {}} C:/ETDSPC/git/ETDSPC/four_bit_adder/full_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\ETDSPC\git\ETDSPC\four_bit_adder\full_adder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity full_adder
+-- Compiling architecture rtl of full_adder
+-- Loading entity half_adder
+
+} {} {}}

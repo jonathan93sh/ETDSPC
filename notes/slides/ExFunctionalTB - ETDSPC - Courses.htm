@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="da"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<title>ExFunctionalTB - ETDSPC - Courses</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Redmine">
+<meta name="keywords" content="issue,bug,tracker">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="qc3bWzWcCbxggcSBAHvi0MvS7wSmX9sMe2Qv7BxHyXnj9UmyU6oKHBLYldCiFBazqeZK1aWQwag9GYfsNxWpOQ==">
+<link rel="shortcut icon" href="https://redmine.ase.au.dk/courses/favicon.ico">
+<link rel="stylesheet" media="all" href="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/jquery-ui-1.css">
+<link rel="stylesheet" media="all" href="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/application.css">
+<link rel="stylesheet" media="all" href="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/responsive.css">
+
+<script src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/jquery-1.js"></script>
+<script src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/application.js"></script>
+<script src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/responsive.js"></script>
+<script>
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+<script src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/theme.js"></script>
+<style>
+#quick_edit_input_dialog {
+  background-color: white;
+}
+
+#quick_edit_input_dialog .page-switchers {
+  padding: 5px;
+  margin: 0px;
+  text-align: right;
+}
+
+#quick_edit_input_dialog .page-switchers ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+#quick_edit_input_dialog .page-switcher {
+  list-style: none;
+  font-size: 0.8em;
+}
+
+#quick_edit_input_dialog .page-switcher a, #quick_edit_input_dialog .page-switcher a:visited {
+  color: #169;
+}
+
+#quick_edit_input_dialog .page-switcher a:hover {
+  color: #C61A1A;
+}
+
+#quick_edit_input_dialog .header {
+  overflow: hidden;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 10px;
+}
+
+#quick_edit_input_dialog .header .message {
+  vertical-align: middle;
+  font-size: 1em;
+}
+
+#quick_edit_input_dialog .header .ids {
+  vertical-align: middle;
+  font-size: 0.85em;
+}
+
+#quick_edit_input_dialog .box {
+  font-size: 0.9em;
+  font-weight: normal;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 12px;
+  margin-bottom: 0px;
+}
+
+#quick_edit_input_dialog .options {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+#quick_edit_input_dialog .full_width {
+  width: 98.8%;
+}
+
+#quick_edit_input_dialog #preview_area {
+  padding-bottom: 6px;
+}
+
+#quick_edit_input_dialog #preview_area table {
+  margin-bottom: 0px;
+}
+
+#quick_edit_input_dialog #preview_area .id {
+  text-align: middle;
+}
+
+#quick_edit_input_dialog #preview_area .before, #quick_edit_input_dialog #preview_area .after {
+  text-align: left;
+  width: 45%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+#quick_edit_input_dialog .footer {
+  color: #a0a0a0;
+  text-align: right;
+  margin-top: 3px;
+  padding-top: 12px;
+  line-height: 1.0em;
+}
+
+</style>
+ <style>
+.quick_view_portrait {
+  background: white none;
+  max-width: 500px;
+  font-size: 0.8em;
+}
+
+.quick_view_portrait_loading {
+  margin: 0px;
+  padding: 3px;
+  font-size: 0.8em;
+}
+.quick_view_portrait_loading img {
+  vertical-align: middle;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 1em;
+}
+
+.quick_view_portrait > .ui-tooltip-content img.gravatar {
+  float: left;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+.quick_view_portrait .subject p{
+  font-size: 0.9em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.quick_view_portrait .subject h3{
+  font-size: 1.25em;
+  margin-left: 0px;
+}
+
+.quick_view_portrait .subject div{
+  margin-left: 1em;
+}
+
+.quick_view_portrait div.subject{
+  margin-left: -1em;
+}
+
+.quick_view_portrait_attributes th {
+  text-align: left;
+}
+
+</style>
+ <link rel="stylesheet" media="screen" href="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/application_002.css">
+<script src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/plugin.js"></script>
+ 
+ <link rel="stylesheet" media="screen" href="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/redmine_agile.css"> <link rel="stylesheet" media="screen" href="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/tweaks.css">
+
+
+<!-- page specific tags -->
+  <link rel="stylesheet" media="screen" href="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/bootstrap-datepicker3.css">
+  <script src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/bootstrap-datepicker.js"></script>
+  <script src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/bootstrap-datepicker_002.js"></script>
+<script>
+//<![CDATA[
+var datepickerOptions={dateFormat: 'yy-mm-dd', firstDay: 1, showOn: 'button', buttonImageOnly: true, buttonImage: '/courses/images/calendar.png', showButtonPanel: true, showWeek: true, showOtherMonths: true, selectOtherMonths: true, changeMonth: true, changeYear: true, beforeShow: beforeShowDatePicker};
+//]]>
+</script><script src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/datepicker-da.js"></script><script src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/jstoolbar-textile.js"></script><script src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/jstoolbar-da.js"></script><link rel="stylesheet" media="screen" href="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/jstoolbar.css"><link rel="stylesheet" media="screen" href="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/wiki_smiles.css"><script src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/wiki_smiles.js"></script><script>
+//<![CDATA[
+redmine_base_url = '/courses';
+var buttons = [];buttons.push([':)', 'smile.png', 'Smile']);
+buttons.push([':(', 'sad.png', 'Sad']);
+buttons.push([':P', 'tongue.png', 'Tongue']);
+buttons.push([':D', 'biggrin.png', 'Big grin']);
+buttons.push([';)', 'wink.png', 'Wink']);
+buttons.push(['(/)', 'check.png', 'Check']);
+buttons.push(['(x)', 'x_mark.png', 'X_mark']);
+buttons.push(['(!)', 'warning.png', 'Warning']);
+setEmoticonButtons(buttons, '/courses/plugin_assets/redmine_wiki_extensions/images');
+
+//]]>
+</script></head>
+<body class="theme-Circle project-etdspc controller-wiki action-show">
+<div id="wrapper">
+
+<div class="flyout-menu js-flyout-menu">
+
+
+        <div class="flyout-menu__search">
+            <form action="/courses/projects/etdspc/search" accept-charset="UTF-8" method="get"><input name="utf8" value="✓" type="hidden">
+            <input name="wiki_pages" value="1" type="hidden">
+            <label class="search-magnifier search-magnifier--flyout" for="flyout-search">⚲</label>
+            <input name="q" id="flyout-search" class="small js-search-input" placeholder="Søg" type="text">
+</form>        </div>
+
+
+        <h3>Projekt</h3>
+        <span class="js-project-menu"></span>
+
+    <h3>Generelt</h3>
+    <span class="js-general-menu"></span>
+
+    <span class="js-sidebar flyout-menu__sidebar"></span>
+
+    <h3>Profil</h3>
+    <span class="js-profile-menu"></span>
+
+</div>
+
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a class="login" href="https://redmine.ase.au.dk/courses/login">Log ind</a></li></ul>    </div>
+    
+    <ul><li><a class="home" href="https://redmine.ase.au.dk/courses/">Forside</a></li>
+<li><a class="projects" href="https://redmine.ase.au.dk/courses/">Projekter</a></li>
+<li><a target="_blank" class="help" href="http://www.redmine.org/guide">Hjælp</a></li></ul></div>
+
+<div id="header">
+
+    <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+    <div id="quick-search">
+        <form action="/courses/projects/etdspc/search" accept-charset="UTF-8" method="get"><input name="utf8" value="✓" type="hidden">
+        <input name="wiki_pages" value="1" type="hidden">
+        <label for="q">
+          <a accesskey="4" href="https://redmine.ase.au.dk/courses/projects/etdspc/search">Søg</a>:
+        </label>
+        <input name="q" id="q" size="20" class="small" accesskey="f" type="text">
+</form>        
+    </div>
+
+    <h1>ETDSPC</h1>
+
+    <div id="main-menu">
+        <ul><li><a class="wiki selected" href="https://redmine.ase.au.dk/courses/projects/etdspc/wiki">Wiki</a></li>
+<li><a class="overview" href="https://redmine.ase.au.dk/courses/projects/etdspc">Oversigt</a></li>
+<li><a class="activity" href="https://redmine.ase.au.dk/courses/projects/etdspc/activity">Aktivitet</a></li>
+<li><a class="documents" href="https://redmine.ase.au.dk/courses/projects/etdspc/documents">Dokumenter</a></li>
+<li><a class="files" href="https://redmine.ase.au.dk/courses/projects/etdspc/files">Filer</a></li>
+<li><a class="repository" href="https://redmine.ase.au.dk/courses/projects/etdspc/repository">Repository</a></li></ul>
+    </div>
+</div>
+
+<div id="main" class="">
+    <div id="sidebar">
+          
+<h3>Wiki</h3>
+<ul>
+  <li><a href="https://redmine.ase.au.dk/courses/projects/etdspc/wiki">Startside</a></li>
+  <li><a href="https://redmine.ase.au.dk/courses/projects/etdspc/wiki/index">Indhold efter titel</a></li>
+  <li><a href="https://redmine.ase.au.dk/courses/projects/etdspc/wiki/date_index">Indhold efter dato</a></li>
+</ul>
+
+
+        
+    </div>
+
+    <div id="content">
+        
+        <div class="contextual">
+  
+  
+  
+  
+  
+  
+<a class="icon icon-history" href="https://redmine.ase.au.dk/courses/projects/etdspc/wiki/ExFunctionalTB/history">Historik</a>
+</div>
+
+<p class="breadcrumb"><a href="https://redmine.ase.au.dk/courses/projects/etdspc/wiki/Wiki">Wiki</a> » </p>
+
+
+<div class="wiki wiki-page">
+  <a name="EXERCISE-I2SST-FUNCTIONAL-TEST-BENCH"></a>
+<h1>EXERCISE: I2S/ST FUNCTIONAL TEST BENCH<a href="#EXERCISE-I2SST-FUNCTIONAL-TEST-BENCH" class="wiki-anchor">¶</a></h1>
+
+
+	<a name="Exercise-Goals"></a>
+<h2>Exercise Goals<a href="#Exercise-Goals" class="wiki-anchor">¶</a></h2>
+
+
+	<p>This exercise will through simulation of realistic interfaces introduce you to:</p>
+
+
+	<ul>
+	<li>Creation of sequential test benches in the ModelSim IDE </li>
+		<li>Creation of stimuli procedures and response monitors </li>
+		<li>Create of non-syntheziable VHDL code </li>
+		<li>Serial data streaming </li>
+		<li>working with configurations in simulation</li>
+	</ul>
+
+
+	<a name="Prerequisites"></a>
+<h2>Prerequisites<a href="#Prerequisites" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li>Quartus and ModelSim Altera software must be installed and working. </li>
+		<li>Knowledge about response monitors, stimuli procedures and configurations </li>
+		<li>Template code from the repository (exercise_seq_tb, see tab)</li>
+	</ul>
+
+
+	<a name="Introduction"></a>
+<h2>Introduction<a href="#Introduction" class="wiki-anchor">¶</a></h2>
+
+
+	<p>This exercise is about sequential testbenches, but we'll use it for a real interface, so heres a breif introduction...</p>
+
+
+	<p>The DE1SoC board used in DSPC provides a codec for sampling and 
+outputting analogue audio. The codec interfaces to the FPGA by means of 
+two serial interfaces:</p>
+
+
+	<ul>
+	<li>IIC (or I2C) for configuring the codec's sampling rate, attenuation and a lot of other stuff. (See XXX for more detail).</li>
+	</ul>
+
+
+	<ul>
+	<li>IIS (or I2S) for audio data. This 1-bit data stream sends the digital audio values between the codec and FPGA.</li>
+	</ul>
+
+
+	<p><img src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/Dspc_ex_seq_tb_de_block.png" style="width: 60%;" alt=""></p>
+
+
+	<p>As you have heard mentioned, the Altera FPGA also provides a 
+streaming bus format, namley the ST-bus. Altera provides FIR, IIR, and a
+ lot of other signal processing blocks that are compliant with the 
+ST-bus. Adapting our IIS audio format to Altera ST, will thus provide us
+ with a large toolbox for manipulating audio.</p>
+
+
+	<p>We'll deal with the ST-bus in a later lesson, but here is a breif introduction to the IIS bus:</p>
+
+
+	<p><img src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/Dspc_ex_iis_iis_timing.png" style="width: 80%;" alt=""></p>
+
+
+	<p>The daclrck/adclrck signal indicates the audio channel (left or 
+right), and the beginning of the serial data sequence (dacdat/adcdat). 
+bclk is the bit clock and is used to indicate when to sample the data 
+bits. The codec typically runs with 24-bit resolution, and 24-bits are 
+therefore shifted out per channel. This cycle repeats with the audio 
+sampling frequency, which in this case is 48 KHz.</p>
+
+
+	<p>Your teacher has build a functional model of such an interface 
+converter, your task is to verify its functionality. For this you'll 
+have to create a functional test bench.</p>
+
+
+	<p><img src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/Dspc_ex_seq_tb_tb_block.png" style="width: 60%;" alt=""></p>
+
+
+	<p>In the next exercise you'll have to implement the actual rtl code 
+and use the converter in conjunction with an SOPC system on the DE1SoC 
+board.</p>
+
+
+	<p>NOTE! In the following work we will ONLY USE THE LEFT CHANNEL of the IIS Interface</p>
+
+
+	<a name="Exercise-Steps"></a>
+<h2>Exercise Steps<a href="#Exercise-Steps" class="wiki-anchor">¶</a></h2>
+
+
+	<a name="1-Inspect-the-existing-code"></a>
+<h3>1 Inspect the existing code<a href="#1-Inspect-the-existing-code" class="wiki-anchor">¶</a></h3>
+
+
+	<p>A) Create a project in ModelSim and include the files supplied.</p>
+
+
+	<p>B) Inspect the iis2st file, note how two architectures are present, 
+though only one is filled in. Its code cannot be compiled to actual 
+gates in the FPGA, as it uses ex. wait for xx ns (how would you want the
+ compiler to implement that?)</p>
+
+
+	<p>C) Inspect the iis2st_tb file and note the configurations at the 
+bottom. These let us select which architecture in iis2st to use when 
+simulating.</p>
+
+
+	<a name="2-Create-Stimuli-Procedure"></a>
+<h2>2 Create Stimuli Procedure<a href="#2-Create-Stimuli-Procedure" class="wiki-anchor">¶</a></h2>
+
+
+	<p>In the test bench note how source and sink is looped-back on the 
+IIS2ST component instantiation. Connections are made according to the 
+figure below.</p>
+
+
+	<p><img src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/Dspc_ex_seq_tb_loopback.png" style="width: 60%;" alt=""></p>
+
+
+	<p>A) Set the IIS input datastream (adcdat) to '0' and perform a 
+simulation (run for 100 us). The output (dacdat) should remain zero. Set
+ the input to '1' and try again. You should have the most basic test 
+bench running now.</p>
+
+
+	<p>B) Create a stimuli procedure that can create an impulse function 
+(|__). GREY BRAIN CELLS have to be used here ;-) The procedure shall 
+emit a 24-bit constant value according to the IIS format followed by 
+zeros: &lt;value&gt;______. Look carefully at the IIS format shown 
+above. Use "Wait" statements to time when to transmit data, timed from 
+the deassertion of ADCLRCK. Since it is a value shifted out, you should 
+try and recall how to create a shift register. The value itself is the 
+amplitude of the impulse. We'll use the impulse to test filters attached
+ to the ST-bus later on.</p>
+
+
+	<p>C) Simulate that the impulse/step actually returns on the dacdat 
+output (Just by viewing the waveform) The waveform below shows the 
+adcdat data and how it ends up on the ST-bus (by means of the iis2st 
+module):</p>
+
+
+	<p><img src="ExFunctionalTB%20-%20ETDSPC%20-%20Courses-filer/Dspc_ex_st_modelsim_wfm_iis_zoom.png" style="width: 80%;" alt=""></p>
+
+
+	<p>D) (Optional - But but good to do) Create a response monitor that 
+can decode the dacdat sequence and report the value to ModelSim (only 
+when it differs from zero or you'll get spammed)</p>
+
+
+	<p>E) (Optional - And harder to do) Extend the response monitor to 
+estimate the latency (time from input to output) for a given input 
+token. Report the latency.</p>
+</div>
+
+
+<div class="attachments">
+<div class="contextual">
+  
+</div>
+<p><a class="icon icon-attachment" href="https://redmine.ase.au.dk/courses/attachments/download/15330/Dspc_ex_seq_tb_de_block.png">Dspc_ex_seq_tb_de_block.png</a>  
+  <span class="size">(36,5 KB)</span>
+    <span class="author">Peter Høgh Mikkelsen, 2017-01-04 10:19</span>
+  </p>
+</div>
+
+
+
+
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Indlæser...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="https://www.redmine.org/">Redmine</a> © 2006-2016 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+<div id="quick_edit">
+  <div id="quick_edit_input_dialogs"></div>
+  <div id="quick_edit_flash" class="flash error" style="display: none; z-index: 1000; position: fixed; top: 10px; left: 10px; opacity: 0.9; min-width: 300px; background-color: #ffe3e3;">
+    <div style="padding: 10px 5px;"> 
+      <span id="quick_edit_flash_message"></span>
+    </div> 
+  </div>
+</div>
+<script>
+//<![CDATA[
+function quick_edit_log(message){
+  if(typeof console !== "undefined" && typeof console.log !=="undefined")
+    console.log("quick_edit: "+message);
+}
+
+function quick_edit_setup_ajax_error_handler() {
+  $(document).ajaxError( function (event, jqXHR, ajaxSettings, thrownError) {
+    if (! (/quick_edit/.test(ajaxSettings.url))) return;
+
+    var message =  jqXHR.status + " " + (jqXHR.getResponseHeader("X-Quick-Edit-Error") || thrownError || jqXHR.statusText);
+    $("#quick_edit_flash_message").text(message);
+
+    var flash = $("#quick_edit_flash");
+    flash.click( function(e) { e.stopPropagation(); } );
+    flash.fadeIn(500, function () {
+      setTimeout( function() { flash.fadeOut(); }, 3000)
+    });
+  });
+}
+
+var offsetY = /[?&]offsetY=(\d+).*/g.exec(location.href);
+if (offsetY) {
+  window.scrollTo(0, offsetY[1]);
+}
+
+quick_edit_setup_ajax_error_handler();
+quick_edit_drag_and_drop_init();
+
+function quick_edit_drag_and_drop_init() {
+  if ($("body").hasClass("controller-issues action-index")) {
+    $("tr.issue").draggable({
+      axis: "y",
+      cursor: "move",
+      containment: "parent",
+      scope: "issue",
+      snap: true,
+      opacity: 0.5,
+      helper: function () { return $('<div></div>'); },
+      start: function (event, ui) {
+        drag_element = $(this);
+        if (!drag_element.hasClass("context-menu-selection")) {
+          drag_element.addClass("context-menu-selection");
+        }
+    
+        ui.helper.css( {
+          "width": drag_element.css("width"),
+          "height": drag_element.css("height"),
+          "background-color": drag_element.css("background-color")});
+      }
+    });
+  
+    $("tr.issue").droppable({
+      scope: "issue",
+      drop: function (event, ui) {
+        var update_ids = quick_edit_get_selections();
+        var new_parent_id = quick_edit_get_issue_id_from_element(this);
+        if (!new_parent_id) return;
+
+        $.ajax({
+          url: '/courses/quick_edit_issues/edit?' + update_ids.join("&") + '&target_specifier=issue[parent_issue_id]&default_value='+new_parent_id,
+          dataType: "script",
+          success : function (html) { $("#quick_edit_dialogs").html(html); }
+        });
+      }
+    });
+  }
+}
+
+function quick_edit_drag_and_drop_enable(){
+  $("tr.issue.ui-draggable").each( function () {
+    var issue = $(this);
+    issue.draggable("enable");
+  });
+  $("tr.issue.ui-droppable").each( function () {
+    var issue = $(this);
+    issue.droppable("enable");
+  });
+
+  quick_edit_log("issue d&d enabled.");
+}
+
+function quick_edit_drag_and_drop_disable(){
+  $("tr.issue.ui-draggable").each( function () {
+    var issue = $(this);
+    issue.draggable("disable");
+  });
+  $("tr.issue.ui-droppable").each( function () {
+    var issue = $(this);
+    issue.droppable("disable");
+  });
+  
+  quick_edit_log("issue d&d disabled.");
+}
+
+function quick_edit_get_selections() {
+    var ids = [];
+    $(".context-menu-selection").each(function (index,element) {
+      var id = quick_edit_get_issue_id_from_element(element);
+      ids.push("ids[]="+id);
+    });
+    return ids;
+}
+
+function quick_edit_get_issue_id_from_element(element) {
+  var id = $(element).attr("id");
+  var m = /issue-(.*)/.exec(id);
+  return m[1];
+}
+
+function quick_edit_input_dialog_switch_page() {
+  var dialog = $("#quick_edit_input_dialog");
+
+  var switchers = dialog.find(".page-switcher");
+  switchers.toggle();
+
+  var pages = dialog.find(".page");
+  pages.toggle();
+
+  if (dialog.find("#replace_switcher:hidden").length == 1) {
+    dialog.find("#find").focus();
+    dialog.dialog("option", "buttons",
+      [ { text: "Preview", click: quick_edit_input_dialog_preview_replace},
+        { text: "Submit", click: quick_edit_input_dialog_replace_submit},
+        { text: "Cancel", click: quick_edit_input_dialog_cancel}]);
+
+  } else {
+    dialog.find("#new_value").focus();
+    dialog.dialog("option", "buttons",
+      [ { text: "Submit", click: quick_edit_input_dialog_edit_submit},
+        { text: "Cancel", click: quick_edit_input_dialog_cancel}]);
+  }
+}
+
+function quick_edit_input_dialog_preview_replace() {
+  var replace_page = $("#quick_edit_input_dialog #replace-page");
+
+  var target_specifier = replace_page.find("#target_specifier").val();
+  var find = replace_page.find("#find").val();
+  var replace = replace_page.find("#replace").val();
+  var match_case = replace_page.find("#match_case:checked").val();
+  var ids = [];
+  replace_page.find("#ids").each( function () { ids.push($(this).val()); });
+  var url="/courses/quick_edit_issues/replace_preview";
+
+  if(find == "") {
+    alert('can&#39;t be empty.');
+    return;
+  }
+
+  $.ajax({
+     url: url,
+     data: {ids: ids, target_specifier: target_specifier, find: find, replace: replace, match_case: match_case},
+     dataType: 'script'});
+}
+
+function quick_edit_input_dialog_replace_submit() {
+  var replace_page = $("#quick_edit_input_dialog #replace-page");
+
+  var find = replace_page.find("#find").val();
+  if(find == "") {
+    alert('can&#39;t be empty.');
+    return;
+  }
+
+  if (!confirm('Er du sikker?')) {
+    return;
+  }
+
+  replace_page.find("form").submit();
+}
+
+function quick_edit_input_dialog_open(){
+  quick_edit_drag_and_drop_disable();
+}
+
+function quick_edit_input_dialog_close(){
+  quick_edit_drag_and_drop_enable();
+  $("#quick_edit_input_dialog").remove();
+}
+
+function quick_edit_input_dialog_cancel(){
+  $("#quick_edit_input_dialog").dialog("close");
+}
+
+function quick_edit_clear(){
+}
+
+function quick_edit_input_dialog_edit_submit(){
+  var edit_page = $("#quick_edit_input_dialog #edit-page");
+
+  var target_specifier = edit_page.find("#target_specifier").val();
+  var new_value_element = edit_page.find("#new_value");
+  var clr_value_element = edit_page.find("#clear");
+
+  if (edit_page.find("#clear:checked").length > 0){
+    new_value_element.attr("name", "_quick_edit_tmp");
+    clr_value_element.attr("name", target_specifier);
+
+  } else {
+    new_value_element.attr("name", target_specifier);
+    clr_value_element.attr("name", "_quick_edit_tmp");
+
+    var new_value = edit_page.find("#new_value").val();
+    if(new_value === null) return;
+
+    var pattern = new RegExp(edit_page.find("#validation_pattern").val());
+
+    if(new_value == "") {
+      alert('can&#39;t be empty.');
+      return;
+
+    } else {
+
+      if(pattern && !pattern.test(new_value)){
+         alert('invalid format.');
+         return;
+      }
+    }
+  }
+
+  var issue_ids = [];
+  edit_page.find("#ids").each(function (index,element) {
+    issue_ids.push($(this).val());
+  });
+  if(issue_ids.length>1){
+     if(!confirm('You selected many issues to be the non unique value.\nAre you sure you want to update?')) return;
+  }
+
+  var offsetY = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  var back_url = edit_page.find("#back_url").val();
+  if (back_url.indexOf("?") == -1) {
+    back_url = back_url + "?offsetY=" + offsetY;
+  } else {
+    back_url = back_url + "&offsetY=" + offsetY;
+  }
+  edit_page.find("#back_url").val(back_url);
+
+  edit_page.find("form").submit();
+}
+
+function quick_edit_show_new_relation_dialog(first_issue_id, second_issue_id, back_url){
+  $("#quick_edit_new_relation_dialog > form > #issue_id").val(first_issue_id);
+  $("#quick_edit_new_relation_dialog > form > #relation_issue_to_id").val(second_issue_id);
+  $("#quick_edit_new_relation_dialog > form > #back_url").val(back_url);
+  $("#quick_edit_new_relation_dialog").dialog({
+     modal: true,
+     closeOnEscape: false,
+     width: 450,
+     height: 150,
+     open: quick_edit_new_relation_dialog_open,
+     close: quick_edit_new_relation_dialog_close
+  });
+
+  quick_edit_log("new_relation dialog open.");
+}
+
+function quick_edit_new_relation_dialog_cancel(){
+   $('#quick_edit_new_relation_dialog').dialog("close");
+}
+
+function quick_edit_new_relation_dialog_open(){
+  quick_edit_drag_and_drop_disable();
+}
+
+function quick_edit_new_relation_dialog_close(){
+  quick_edit_drag_and_drop_enable();
+}
+
+//]]>
+</script>
+
+ <script>
+//<![CDATA[
+var mouse_stay_issue = null;
+function quick_view_tooltip_init(elements, issue_id_parser) {
+  elements.each(function(){
+     var link = $(this);
+     if (link.hasClass("has_quick_view_mouse_event")) return;
+
+     var issue_id = issue_id_parser(link);
+     if (!issue_id) return;
+
+     link.addClass("has_quick_view_mouse_event");
+     link.data("quick_view_issue", issue_id);
+     link.mouseenter( quick_view_tooltip_activate_if_mouse_stay_begin );
+     link.mouseleave( quick_view_tooltip_activate_if_mouse_stay_cancel );
+  });
+}
+
+function quick_view_tooltip_activate_if_mouse_stay_begin() {
+   var link = $(this);
+   mouse_stay_issue = link.data("quick_view_issue");
+   setTimeout(function() {quick_view_tooltip_activate_if_mouse_stay(link)}, 1000);
+}
+
+function quick_view_tooltip_activate_if_mouse_stay_cancel() {
+   var link = $(this);
+   mouse_stay_issue = null;
+}
+
+function quick_view_tooltip_activate_if_mouse_stay(link) {
+  var issue_id = link.data("quick_view_issue");
+  if (mouse_stay_issue != issue_id) return;
+
+  if (!link.hasClass("has_quick_view_portrait")) {
+    var url = "/courses/quick_view_issues/0/portray".replace(/0\/portray$/, issue_id + "/portray");
+    link.tooltip({
+      tooltipClass:"quick_view_portrait",
+      position:    { my: "left+30px top-80px", at: "right top+10px", collision: "flipfit" },
+      track:       true,
+      items:       "[class]",
+      content:     "<div class='quick_view_portrait_loading'><img src='/courses/images/loading.gif'></img>LOADING</div>"
+      });
+
+    // repeat ajax request if bind to the open event of the tooltip.
+    $.ajax({ url: url, dataType: 'html', global: false})
+      .done(function (html){
+        link.addClass("has_quick_view_portrait"); //mark of portrait created.
+        link.tooltip("option", "content", html);
+      });
+  }
+  link.tooltip("open");
+}
+
+//]]>
+</script>
+
+ <div id="quick_view_dialogs"></div>
+<script>
+//<![CDATA[
+var quick_view_dialog_open_queue = 0;
+var quick_view_click_event_object = null;
+
+quick_view_issue_dialog_init();
+$(document).ajaxComplete(quick_view_issue_dialog_init);
+
+function quick_view_issue_dialog_init() {
+  var body = $("body");
+  if (body.hasClass("controller-issues") && body.hasClass("action-index")) {
+    quick_view_issue_dialog_event_init($("tr.issue"));
+  }
+  
+  if (body.hasClass("controller-issues") && body.hasClass("action-show")) {
+    quick_view_issue_dialog_event_init($("tr.issue"));
+  }
+  
+  if (body.hasClass("controller-my")) {
+    quick_view_issue_dialog_event_init($("tr.issue"));
+    
+  }
+
+  if (body.hasClass("controller-versions")) {
+    quick_view_issue_dialog_event_init($("tr.hascontextmenu > td"));
+  }
+  
+  if (body.hasClass("controller-gantts")) {
+    quick_view_issue_dialog_event_init($("div.issue-subject"));
+    quick_view_issue_dialog_event_init($("div.tooltip"));
+  }
+}
+
+function quick_view_issue_dialog_event_init(elements) {
+  elements.each( function () {
+    var element = $(this);
+    if (element.hasClass("has_quick_view_issue_dialog_handler")) return;
+
+    element.addClass("has_quick_view_issue_dialog_handler");
+    element.click(quick_view_issue_click);
+    element.dblclick(quick_view_issue_dblclick);
+  });
+}
+
+quick_view_issue_tooltip_init();
+$(document).ajaxComplete(quick_view_issue_tooltip_init);
+
+function quick_view_issue_tooltip_init() {
+  var body = $("body");
+  if (body.hasClass("controller-issues") && body.hasClass("action-index")) {
+    quick_view_tooltip_init($("tr.issue > td.subject > a"), quick_view_href_issue_id_parser);
+    quick_view_tooltip_init($("tr.issue > td.id > a"), quick_view_href_issue_id_parser);
+    quick_view_tooltip_init($("a.issue"), quick_view_href_issue_id_parser); // for parent link in the issue dialog
+  }
+  
+  if (body.hasClass("controller-issues") && body.hasClass("action-show")) {
+    quick_view_tooltip_init($("tr.issue > td.subject > a"), quick_view_href_issue_id_parser);
+    quick_view_tooltip_init($("a.issue"), quick_view_href_issue_id_parser);
+  }
+  
+  if (body.hasClass("controller-my")) {
+    quick_view_tooltip_init($("tr.issue > td.subject > a"), quick_view_href_issue_id_parser);
+    quick_view_tooltip_init($("tr.issue > td.id > a"), quick_view_href_issue_id_parser);
+    quick_view_tooltip_init($("a.issue"), quick_view_href_issue_id_parser); // for parent link in the issue dialog
+  }
+
+  if (body.hasClass("controller-versions")) {
+    quick_view_tooltip_init($("a.issue"), quick_view_href_issue_id_parser); // for parent link in the issue dialog
+  }
+
+  if (body.hasClass("controller-gantts")) {
+    quick_view_tooltip_init($("a.issue"), quick_view_href_issue_id_parser);
+  }
+}
+
+function quick_view_href_issue_id_parser(current_target) {
+  var issue_id = null;
+
+  var href = current_target.attr("href");
+  if (href) {
+     var m = /\/issues\/(\d+)$/.exec(href);
+     if (m) issue_id = m[1];
+  }
+
+  return issue_id;
+}
+
+function quick_view_child_href_issue_id_parser(current_target) {
+  var issue_id = null;
+
+  var href = current_target.children("a.issue").attr("href");
+  if (href) {
+     var m = /\/issues\/(\d+)$/.exec(href);
+     if (m) issue_id = m[1];
+  }
+
+  return issue_id;
+}
+
+function quick_view_grandson_href_issue_id_parser(current_target) {
+  var issue_id = null;
+
+  var href = current_target.children().children("a.issue").attr("href");
+  if (href) {
+     var m = /\/issues\/(\d+)$/.exec(href);
+     if (m) issue_id = m[1];
+  }
+
+  return issue_id;
+}
+
+function quick_view_element_id_issue_id_parser(current_target) {
+  var issue_id = null;
+
+  var id = current_target.attr("id");
+  var m = /issue-(\d+)/.exec(id);
+  if (m) issue_id = m[1];
+
+  return issue_id;
+}
+
+function quick_view_child_subject_td_issue_id_parser(current_target) {
+  var issue_id = null;
+
+  var child = current_target.children("td.subject").children("a.issue");
+  if ( child.length == 1 ) {
+    var m = /\/issues\/(\d+)$/.exec(child.attr("href"));
+    if (m) issue_id = m[1];
+  }
+
+  return issue_id;
+}
+
+function quick_view_issue_click(event) {
+   quick_view_click_event_object = event;
+}
+
+function quick_view_issue_dblclick(event) {
+  var current_target = $(event.currentTarget);
+  var issue_id = quick_view_element_id_issue_id_parser(current_target);
+  if (!issue_id) {
+    issue_id = quick_view_child_subject_td_issue_id_parser(current_target);
+    if (!issue_id) {
+      issue_id = quick_view_child_href_issue_id_parser(current_target);
+      if (!issue_id) {
+        issue_id = quick_view_grandson_href_issue_id_parser(current_target);
+        if(!issue_id) return;
+      }
+    }
+  }
+
+  quick_view_show_dialog(issue_id);
+}
+
+function quick_view_show_dialog() {
+  if (arguments.length == 0) {
+     return;
+  }
+
+  quick_view_dialog_open_queue = arguments.length;
+  for (var i = 0; i < arguments.length; ++i) {
+     var issue_id = arguments[i];
+
+     var already_exists=$(".quick_view_dialog[data-issue="+issue_id+"]");
+     if (already_exists.length==1) {
+       already_exists.dialog("moveToTop");
+       continue;
+     }
+     var url = '/courses/issues/0'.replace(/0$/,issue_id);
+     $.ajax( { url: url, dataType: 'html' }).done( function () {
+       var url = '/courses/quick_view_issues/0'.replace(/0$/,issue_id);
+       $.ajax( { url: url, dataType: 'html', success: quick_view_dialog_open });
+     });
+  }
+}
+
+function quick_view_dialog_open(dialog_html) {
+  $("#quick_view_dialogs").append(dialog_html);
+
+  var m = /id="(quick_view_dialog_[0-9]+)"/.exec(dialog_html);
+  if (m == null) return;
+
+  var dialog_id = m[1];
+
+  quick_view_dialog_open_queue--;
+  var adjust = (quick_view_dialog_open_queue * 30) + 'px';
+  var position_base = quick_view_click_event_object != null ? quick_view_click_event_object : window;
+  var position = {my: "right-"+adjust+" center-"+adjust, of: position_base };
+
+  $('#'+dialog_id).dialog({
+     modal: false,
+     closeOnEscape: false,
+     width: 640,
+     height: 600,
+     position: position,
+     show: {effect:"clip", easing:"easeInQuad"},
+     hide: {effect:"clip", easing:"easeOutQuad"},
+     buttons: {
+        "details" : quick_view_dialog_details,
+        "edit" : quick_view_dialog_edit,
+        "close" : quick_view_dialog_cancel
+     },
+     close: quick_view_dialog_close
+  });
+  $(".quick_view_dialog").click( function (e) {
+    e.stopPropagation();
+  });
+}
+
+function quick_view_dialog_close(){
+  $(this).remove();
+}
+
+function quick_view_dialog_cancel(){
+  $(this).dialog("close");
+}
+
+function quick_view_dialog_get_issue_id(dialog){
+  var issue_id = dialog.attr("data-issue");
+  return issue_id;
+}
+
+function quick_view_dialog_details(){
+  var this_element = $(this);
+  var issue_id = quick_view_dialog_get_issue_id(this_element);
+  location.href='/courses/issues/0'.replace(/0$/, issue_id);
+}
+
+function quick_view_dialog_edit(){
+  var this_element = $(this);
+  var issue_id = quick_view_dialog_get_issue_id(this_element);
+  location.href='/courses/issues/0/edit'.replace(/0\/edit/, issue_id+'/edit');
+}
+//]]>
+</script>
+
+ <script>
+//<![CDATA[
+if ($("body").hasClass("controller-work_time")) {
+  quick_view_work_time_extension_dialog_anchor_init();
+  $(document).ajaxComplete(quick_view_work_time_extension_dialog_anchor_init);
+
+  quick_view_work_time_extension_tooltip_init();
+  $(document).ajaxComplete(quick_view_work_time_extension_tooltip_init);
+}
+
+function quick_view_work_time_extension_dialog_anchor_init() {
+  var links = $(".wt_iss_link");
+  links.each(function(){
+     var link = $(this);
+     if (link.hasClass("has_quick_view_anchor")) return;
+
+     var insertTo = link.next(".wt_done_ratio");
+     if (insertTo.length == 0) {
+       insertTo = link;
+     }
+     var issue_id = link.data("issue");
+     var anchor_html="<a style='margin-left: 5px;' href='javascript: quick_view_show_dialog("+issue_id+");'><img src='/courses/images/external.png'></img></a>";
+     $(anchor_html).insertAfter(insertTo);
+     link.addClass("has_quick_view_anchor");
+  });
+}
+
+function quick_view_work_time_extension_tooltip_init() {
+  var links = $(".wt_iss_link");
+  quick_view_tooltip_init(links, quick_view_work_time_extension_issue_id_parser);
+}
+
+function quick_view_work_time_extension_issue_id_parser(link) {
+  return link.data("issue");
+}
+//]]>
+</script>
+  
+
+
+</body></html>

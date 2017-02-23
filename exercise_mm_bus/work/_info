@@ -1,0 +1,262 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/ETDSPC/git/ETDSPC/MS_four_bit_adder
+Ebin2sevenseg
+Z0 w1486125509
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/ETDSPC/git/ETDSPC/exercise_mm_bus
+Z5 8C:/ETDSPC/git/ETDSPC/exercise_mm_bus/bin2sevenseg.vhd
+Z6 FC:/ETDSPC/git/ETDSPC/exercise_mm_bus/bin2sevenseg.vhd
+l0
+L5
+VZoW6;Y7DPiBTG=9k18Jgf0
+!s100 Yh47[MkaGoVPQLhzl_U_R2
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1486503192
+!i10b 1
+Z9 !s108 1486503192.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ETDSPC/git/ETDSPC/exercise_mm_bus/bin2sevenseg.vhd|
+Z11 !s107 C:/ETDSPC/git/ETDSPC/exercise_mm_bus/bin2sevenseg.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioural
+R1
+R2
+R3
+Z14 DEx4 work 12 bin2sevenseg 0 22 ZoW6;Y7DPiBTG=9k18Jgf0
+l15
+L13
+V97cj@kLDoS9DTA`AgI=ie1
+!s100 Jod?lADd7akLY_DbI7AzG1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Emm_bus_counter
+Z15 w1486500164
+R1
+R2
+R3
+R4
+Z16 8C:\ETDSPC\git\ETDSPC\exercise_mm_bus\mm_bus_counter.vhd
+Z17 FC:\ETDSPC\git\ETDSPC\exercise_mm_bus\mm_bus_counter.vhd
+l0
+L5
+V1SiR3z<:BMQ;If0n;FnbC3
+!s100 j@c<E[Ndhna=81GWDlbTl2
+R7
+32
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\ETDSPC\git\ETDSPC\exercise_mm_bus\mm_bus_counter.vhd|
+Z19 !s107 C:\ETDSPC\git\ETDSPC\exercise_mm_bus\mm_bus_counter.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+R3
+DEx4 work 14 mm_bus_counter 0 22 1SiR3z<:BMQ;If0n;FnbC3
+l36
+L25
+V;0GghQ1lFGPff26>M2Q>W2
+!s100 aG=J`0Kz@j;6UHb9R^`4K3
+R7
+32
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R12
+R13
+Emm_bus_counter_tb
+Z20 w1486502853
+Z21 DPx4 work 10 sim_avalon 0 22 X>8_3dI_]oYiT3miTNQ3L0
+R1
+R2
+R3
+R4
+Z22 8C:\ETDSPC\git\ETDSPC\exercise_mm_bus\mm_bus_counter_tb.vhd
+Z23 FC:\ETDSPC\git\ETDSPC\exercise_mm_bus\mm_bus_counter_tb.vhd
+l0
+L7
+VHelNHFQSlNEMg_5ahZ;@S0
+!s100 eaEOFT6S0PijfEgA0R31:0
+R7
+32
+Z24 !s110 1486503193
+!i10b 1
+Z25 !s108 1486503193.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\ETDSPC\git\ETDSPC\exercise_mm_bus\mm_bus_counter_tb.vhd|
+Z27 !s107 C:\ETDSPC\git\ETDSPC\exercise_mm_bus\mm_bus_counter_tb.vhd|
+!i113 1
+R12
+R13
+Atb
+R21
+R1
+R2
+R3
+DEx4 work 17 mm_bus_counter_tb 0 22 HelNHFQSlNEMg_5ahZ;@S0
+l74
+L13
+V>Ii02_BCoL9[5_zcC>mG`0
+!s100 0eOoIN9Wmb510FA_J]Yfg0
+R7
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R12
+R13
+Emm_bus_seven_seg_four_digit
+Z28 w1486498630
+R1
+R2
+R3
+R4
+Z29 8C:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_seven_seg_four_digit.vhd
+Z30 FC:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_seven_seg_four_digit.vhd
+l0
+L5
+V26j@0_VkFajQ0ER:o]d?J3
+!s100 PMZoVoD@BiHKP5`PPmXcQ2
+R7
+32
+R24
+!i10b 1
+R25
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_seven_seg_four_digit.vhd|
+Z32 !s107 C:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_seven_seg_four_digit.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R14
+R1
+R2
+R3
+DEx4 work 27 mm_bus_seven_seg_four_digit 0 22 26j@0_VkFajQ0ER:o]d?J3
+l28
+L24
+V^K@;JoM3Ojcm^Vz:5[Q^;2
+!s100 0EUPE89bWjCVE1KnN3<LR1
+R7
+32
+R24
+!i10b 1
+R25
+R31
+R32
+!i113 1
+R12
+R13
+Emm_bus_seven_seg_four_digit_tb
+Z33 w1486503183
+R1
+R21
+R2
+R3
+R4
+Z34 8C:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_seven_seg_four_digit_tb.vhd
+Z35 FC:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_seven_seg_four_digit_tb.vhd
+l0
+L7
+VKmGTQVCC^_0V1kk7gBO343
+!s100 PmIJ[:a3:==VXWQISigR91
+R7
+32
+R24
+!i10b 1
+R25
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_seven_seg_four_digit_tb.vhd|
+Z37 !s107 C:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_seven_seg_four_digit_tb.vhd|
+!i113 1
+R12
+R13
+Atb
+R1
+R21
+R2
+R3
+Z38 DEx4 work 30 mm_bus_seven_seg_four_digit_tb 0 22 KmGTQVCC^_0V1kk7gBO343
+l98
+L13
+VZ5N<V1>FcI[mBYT0ZRdbT1
+!s100 PC8mW5z`5DHmPkjc=h@aB2
+R7
+32
+R24
+!i10b 1
+R25
+R36
+R37
+!i113 1
+R12
+R13
+Psim_avalon
+R1
+R2
+R3
+R0
+R4
+Z39 8C:\ETDSPC\git\ETDSPC\exercise_mm_bus\sim_avalon.vhd
+Z40 FC:\ETDSPC\git\ETDSPC\exercise_mm_bus\sim_avalon.vhd
+l0
+L5
+VX>8_3dI_]oYiT3miTNQ3L0
+!s100 CA3f^>mm3TFbT>al@IbnO1
+R7
+32
+b1
+R8
+!i10b 1
+R9
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\ETDSPC\git\ETDSPC\exercise_mm_bus\sim_avalon.vhd|
+Z42 !s107 C:\ETDSPC\git\ETDSPC\exercise_mm_bus\sim_avalon.vhd|
+!i113 1
+R12
+R13
+Bbody
+R21
+R1
+R2
+R3
+l0
+L28
+VSP=80V@QehNh:k]X:2CEd1
+!s100 n1gFX>jj:Pi0[WRN:dJmH0
+R7
+32
+R8
+!i10b 1
+R9
+R41
+R42
+!i113 1
+R12
+R13

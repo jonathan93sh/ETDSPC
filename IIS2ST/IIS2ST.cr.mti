@@ -1,0 +1,65 @@
+C:/ETDSPC/git/ETDSPC/IIS2ST/fir_st_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ETDSPC/git/ETDSPC/IIS2ST/fir_st_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity fir_st_tb
+-- Compiling architecture bench of fir_st_tb
+-- Loading package fixed_point_lw_pkg
+-- Loading entity fir_st
+
+} {} {}} C:/ETDSPC/git/ETDSPC/IIS2ST/fixed_point_lw_pkg.vhd {2 {vcom -work work -2002 -explicit -stats=none {C:\ETDSPC\git\ETDSPC\IIS2ST\fixed_point_lw_pkg.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package fixed_point_lw_pkg
+-- Compiling package body fixed_point_lw_pkg
+-- Loading package fixed_point_lw_pkg
+** Warning: C:\ETDSPC\git\ETDSPC\IIS2ST\fixed_point_lw_pkg.vhd(112): (vcom-1073) Non-locally static choice (association #1, choice #1) is allowed only if it is the only choice of the only association.
+** Warning: C:\ETDSPC\git\ETDSPC\IIS2ST\fixed_point_lw_pkg.vhd(275): (vcom-1073) Non-locally static choice (association #1, choice #1) is allowed only if it is the only choice of the only association.
+
+} {} {}} C:/ETDSPC/git/ETDSPC/IIS2ST/iis2st.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ETDSPC/git/ETDSPC/IIS2ST/iis2st.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity iis2st
+-- Compiling architecture functional of iis2st
+-- Compiling architecture rtl of iis2st
+-- Loading entity iis2st
+
+} {} {}} C:/ETDSPC/git/ETDSPC/IIS2ST/iis2st_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ETDSPC/git/ETDSPC/IIS2ST/iis2st_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity iis2st_tb
+-- Compiling architecture bench of iis2st_tb
+-- Loading package fixed_point_lw_pkg
+-- Loading entity fir_st
+-- Compiling configuration functional_sim_cfg
+-- Loading entity iis2st_tb
+-- Loading architecture bench of iis2st_tb
+-- Loading entity iis2st
+-- Compiling configuration rtl_sim_cfg
+-- Loading entity iis2st_tb
+-- Loading architecture bench of iis2st_tb
+-- Loading entity iis2st
+-- Loading entity fir_st
+
+} {} {}} C:/ETDSPC/git/ETDSPC/IIS2ST/fir_st.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\ETDSPC\git\ETDSPC\IIS2ST\fir_st.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_point_lw_pkg
+-- Compiling entity fir_st
+-- Compiling architecture rtl of fir_st
+
+} {} {}}

@@ -1,0 +1,92 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+use work.fixed_point_lw_pkg.ALL;
+
+ entity fir_st is
+ generic(
+		filterOrder : integer 	:= 10;
+		inputWidth 	: integer 	:= 24;
+		coefWidth 	: integer 	:= 8;
+		coefShift	: integer	:= 8
+		);
+  port (
+    -- Common --
+    clk              : in  std_logic;   -- 48KHz
+    reset_n          : in  std_logic;
+    -- ST Bus --
+    ast_sink_data    : in  std_logic_vector(inputWidth-1 downto 0);
+    ast_sink_valid   : in  std_logic;
+    ast_sink_error   : in  std_logic_vector(1 downto 0);
+    ast_source_data  : out std_logic_vector(inputWidth-1 downto 0);
+    ast_source_valid : out std_logic;
+    ast_source_error : out std_logic_vector(1 downto 0)
+    );
+ end entity fir_st;
+
+ 
+architecture rtl of fir_st is
+
+subtype coeff_type is integer range -2**(coefWidth-1) to (2**(coefWidth-1))-1;
+type coeff_array_type is array (0 to filterOrder/2) of coeff_type;
+
+subtype tap_type is signed(inputWidth-1 downto 0);
+type tap_array_type is array (0 to filterOrder) of tap_type;
+
+subtype prod_type is signed(inputWidth+coefWidth downto 0);
+type prod_array_type is array (0 to filterOrder/2) of prod_type;
+signal ref : coeff_type;
+constant coeff : coeff_array_type := (		-1,
+											-3,
+											0,
+											24,
+											65,
+											86);
+signal tap : tap_array_type := (others => (others => '0'));
+signal prod : prod_array_type := (others => (others => '0'));
+ 
+ 
+constant safe_length : integer := inputWidth+coefWidth + 1 + 3; -- 3 = ceil(log2(5))
+ 
+ begin
+	
+	ast_source_valid <= '1';
+	ast_source_error <= ast_sink_error;
+	
+	filter : process (clk, reset_n)
+	variable sum : signed(safe_length-1 downto 0);
+	variable result : signed(safe_length-1-coefShift downto 0);
+	begin
+		if reset_n = '0' then
+			tap <= (others => (others => '0'));
+			prod <= (others => (others => '0'));
+		elsif rising_edge(clk) then
+			
+			-- shift taps;
+			tap(0) <= signed(ast_sink_data);
+			
+			for i in 0 to filterOrder-1 loop
+				tap(i+1) <= tap(i);
+			end loop;
+	
+			for i in 0 to (filterOrder/2) loop
+					if i /= (filterOrder/2) then
+						prod(i) <= (resize(tap(i), inputWidth+1) + resize(tap(filterOrder-i), inputWidth+1)) * coeff(i);--resize((tap(i) + tap(filterOrder-i)) * coeff(i), inputWidth+coefWidth);
+					else
+						prod(i) <= resize(tap(i) * coeff(i), inputWidth+coefWidth);
+					end if;
+			end loop;
+			
+			sum := (others => '0');
+			for i in 0 to (filterOrder/2) loop
+				sum := sum + prod(i);
+			end loop;
+			
+			result := resize(SHIFT_RIGTH(sum, coefShift), result'length);
+			
+			ast_source_data <= std_logic_vector(result(result'high downto result'high+1-inputWidth));--std_logic_vector(resize(sum, ast_source_data'length) );--sum(sum'high downto sum'high-inputWidth+1));
+		end if;
+	end process;
+ 
+ end;

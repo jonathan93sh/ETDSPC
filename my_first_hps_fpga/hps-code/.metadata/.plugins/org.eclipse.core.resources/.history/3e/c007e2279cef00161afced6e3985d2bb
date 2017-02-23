@@ -1,0 +1,37 @@
+//============================================================================
+// Name        : Counter_and_7seg.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/mman.h>
+#include "hps_0.h"
+#include "hwlib.h"
+#include "socal/socal.h"
+#include "socal/hps.h"
+#include "socal/alt_gpio.h"
+
+using namespace std;
+
+int main() {
+
+	void *virtual_base;
+
+
+	if( ( fd = open( "/dev/mem", ( O_RDWR | O_SYNC ) ) ) == -1 ) {
+		printf( "ERROR: could not open \"/dev/mem\"...\n" );
+		return( 1 );
+	}
+
+
+	unsigned* ptr = (unsigned*)0x00030000;
+
+	cout << "Count value is: " << *ptr << endl; // prints !!!Hello World!!!
+	return 0;
+}

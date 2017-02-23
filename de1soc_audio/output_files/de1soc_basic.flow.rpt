@@ -1,0 +1,166 @@
+Flow report for de1soc_basic
+Sat Feb 18 22:02:09 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Sat Feb 18 22:01:44 2017       ;
+; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                   ; de1soc_basic                                ;
+; Top-level Entity Name           ; de1soc_audio_no_hps_top                     ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSEMA5F31C6                                ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 302 / 32,070 ( < 1 % )                      ;
+; Total registers                 ; 611                                         ;
+; Total pins                      ; 120 / 457 ( 26 % )                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
+; Total DSP Blocks                ; 1 / 87 ( 1 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 1 / 6 ( 17 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 02/18/2017 21:59:31 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; de1soc_basic        ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                               ;
++-------------------------------------+--------------------------------------------------------------+--------------------+-------------------------+------------+
+; Assignment Name                     ; Value                                                        ; Default Value      ; Entity Name             ; Section Id ;
++-------------------------------------+--------------------------------------------------------------+--------------------+-------------------------+------------+
+; ADVANCED_PHYSICAL_OPTIMIZATION      ; Off                                                          ; On                 ; --                      ; --         ;
+; ALM_REGISTER_PACKING_EFFORT         ; Low                                                          ; Medium             ; --                      ; --         ;
+; COMPILER_SIGNATURE_ID               ; 66619482252684.148745157101324                               ; --                 ; --                      ; --         ;
+; FITTER_EFFORT                       ; Fast Fit                                                     ; Auto Fit           ; --                      ; --         ;
+; IO_PLACEMENT_OPTIMIZATION           ; Off                                                          ; On                 ; --                      ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                           ; --                 ; --                      ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                            ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; ip/altsource_probe/hps_reset_bb.v                            ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir.cmp                                                 ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/dspba_library_package.vhd                       ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/dspba_library.vhd                               ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/auk_dspip_math_pkg_hpfir.vhd                    ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/auk_dspip_lib_pkg_hpfir.vhd                     ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd       ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/auk_dspip_avalon_streaming_source_hpfir.vhd     ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/auk_dspip_roundsat_hpfir.vhd                    ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/altera_avalon_sc_fifo.v                         ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/test_fir_rtl_core.vhd                           ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/test_fir_ast.vhd                                ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/test_fir.vhd                                    ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/test_fir_nativelink.tcl                         ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/test_fir_msim.tcl                               ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/test_fir_tb.vhd                                 ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/test_fir_mlab.m                                 ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/test_fir_model.m                                ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/test_fir_coef_int.txt                           ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/test_fir_input.txt                              ; --                 ; --                      ; --         ;
+; MISC_FILE                           ; test_fir_sim/test_fir_param.txt                              ; --                 ; --                      ; --         ;
+; NUM_PARALLEL_PROCESSORS             ; 2                                                            ; --                 ; --                      ; --         ;
+; OPTIMIZE_MULTI_CORNER_TIMING        ; Off                                                          ; On                 ; --                      ; --         ;
+; OPTIMIZE_POWER_DURING_FITTING       ; Off                                                          ; Normal compilation ; --                      ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                       ; --                 ; de1soc_audio_no_hps_top ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                       ; --                 ; de1soc_audio_no_hps_top ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                       ; --                 ; de1soc_audio_no_hps_top ; Top        ;
+; PHYSICAL_SYNTHESIS_EFFORT           ; Fast                                                         ; Normal             ; --                      ; --         ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                          ; --                 ; --                      ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                        ; --                 ; --                      ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                 ; --                 ; --                      ; --         ;
+; ROUTER_TIMING_OPTIMIZATION_LEVEL    ; MINIMUM                                                      ; Normal             ; --                      ; --         ;
+; SLD_FILE                            ; ip/audio_clk/audio_clk.debuginfo                             ; --                 ; --                      ; --         ;
+; SPD_FILE                            ; test_fir.spd                                                 ; --                 ; --                      ; --         ;
+; SYNTHESIS_EFFORT                    ; Fast                                                         ; Auto               ; --                      ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                           ; --                 ; --                      ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                           ; --                 ; --                      ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                           ; --                 ; --                      ; --         ;
+; TOP_LEVEL_ENTITY                    ; de1soc_audio_no_hps_top                                      ; de1soc_basic       ; --                      ; --         ;
++-------------------------------------+--------------------------------------------------------------+--------------------+-------------------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:27     ; 1.0                     ; 767 MB              ; 00:00:55                           ;
+; Fitter                    ; 00:01:22     ; 1.0                     ; 1913 MB             ; 00:01:47                           ;
+; Assembler                 ; 00:00:18     ; 1.0                     ; 731 MB              ; 00:00:16                           ;
+; TimeQuest Timing Analyzer ; 00:00:23     ; 1.2                     ; 1031 MB             ; 00:00:24                           ;
+; Total                     ; 00:02:30     ; --                      ; --                  ; 00:03:22                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; Jonathan-laptop  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; Jonathan-laptop  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; Jonathan-laptop  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; Jonathan-laptop  ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off de1soc_basic -c de1soc_basic
+quartus_fit --read_settings_files=off --write_settings_files=off de1soc_basic -c de1soc_basic
+quartus_asm --read_settings_files=off --write_settings_files=off de1soc_basic -c de1soc_basic
+quartus_sta de1soc_basic -c de1soc_basic
+
+
+

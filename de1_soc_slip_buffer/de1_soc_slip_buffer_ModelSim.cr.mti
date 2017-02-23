@@ -1,0 +1,64 @@
+C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/elastic_buffer_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/elastic_buffer_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_elastic_buffer
+-- Compiling architecture Bhv of tb_elastic_buffer
+-- Loading entity elastic_buffer
+
+} {} {}} C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/clock_gen.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/clock_gen.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity clock_gen
+-- Compiling architecture arch of clock_gen
+
+} {} {}} C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/elastic_buffer.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\ETDSPC\git\ETDSPC\de1_soc_slip_buffer\audio_system\elastic_buffer.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity elastic_buffer
+-- Compiling architecture behaviour of elastic_buffer
+-- Loading entity push_synchronizer
+
+} {} {}} C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/iis2st.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/iis2st.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity iis2st
+-- Compiling architecture functional of iis2st
+-- Compiling architecture rtl of iis2st
+-- Loading entity iis2st
+
+} {} {}} C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/clock_gen_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/clock_gen_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_clock_gen
+-- Compiling architecture tb of tb_clock_gen
+
+} {} {}} C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/audio_system.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/audio_system.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity audio_system
+-- Compiling architecture arch of audio_system
+-- Loading entity clock_gen
+-- Loading entity iis2st
+-- Loading entity elastic_buffer
+
+} {} {}}

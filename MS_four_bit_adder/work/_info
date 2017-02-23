@@ -1,0 +1,213 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/intelFPGA_lite/16.1
+Efour_bit_adder
+Z0 w1485936481
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/ETDSPC/git/ETDSPC/MS_four_bit_adder
+Z4 8C:\ETDSPC\git\ETDSPC\four_bit_adder\four_bit_adder.vhd
+Z5 FC:\ETDSPC\git\ETDSPC\four_bit_adder\four_bit_adder.vhd
+l0
+L5
+V[S;2hPHFc9mg2dd7OaQn`0
+!s100 7RTGiVIEi;gB6CNKjSb602
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1485940387
+!i10b 1
+Z8 !s108 1485940387.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\ETDSPC\git\ETDSPC\four_bit_adder\four_bit_adder.vhd|
+Z10 !s107 C:\ETDSPC\git\ETDSPC\four_bit_adder\four_bit_adder.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Astructural
+Z13 DEx4 work 10 full_adder 0 22 fHL^hn<ddXUlb^KQ:=_8m2
+R1
+R2
+Z14 DEx4 work 14 four_bit_adder 0 22 [S;2hPHFc9mg2dd7OaQn`0
+l12
+L10
+VIIa_4C[G97Zzg:@Q_XVE32
+!s100 ?2`leH[@B`Zf7:@j=ThCB0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efull_adder
+Z15 w1485335934
+R1
+R2
+R3
+Z16 8C:\ETDSPC\git\ETDSPC\four_bit_adder\full_adder.vhd
+Z17 FC:\ETDSPC\git\ETDSPC\four_bit_adder\full_adder.vhd
+l0
+L5
+VfHL^hn<ddXUlb^KQ:=_8m2
+!s100 SgoaXOV4HQ2W@mh;B3hMF3
+R6
+32
+Z18 !s110 1485940388
+!i10b 1
+R8
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\ETDSPC\git\ETDSPC\four_bit_adder\full_adder.vhd|
+Z20 !s107 C:\ETDSPC\git\ETDSPC\four_bit_adder\full_adder.vhd|
+!i113 1
+R11
+R12
+Artl
+Z21 DEx4 work 10 half_adder 0 22 =[4R7DP[h6jl1oO<Kk7jd1
+R1
+R2
+R13
+l14
+L12
+V^<>c9XJ?AX]`ZCkQlXDAQ2
+!s100 @KhAn^:5;J^Wi<VnN;bzi2
+R6
+32
+R18
+!i10b 1
+R8
+R19
+R20
+!i113 1
+R11
+R12
+Ehalf_adder
+Z22 w1485333979
+R1
+R2
+R3
+Z23 8C:/ETDSPC/git/ETDSPC/four_bit_adder/half_adder.vhd
+Z24 FC:/ETDSPC/git/ETDSPC/four_bit_adder/half_adder.vhd
+l0
+L5
+V=[4R7DP[h6jl1oO<Kk7jd1
+!s100 K[:Yj;g>IAYd:@[DVzG<W0
+R6
+32
+R7
+!i10b 1
+R8
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ETDSPC/git/ETDSPC/four_bit_adder/half_adder.vhd|
+Z26 !s107 C:/ETDSPC/git/ETDSPC/four_bit_adder/half_adder.vhd|
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+R21
+l14
+L12
+VIlmMjPB4LJOAi_gVfz`^>3
+!s100 WM:FCaFBPNSPhgoWcJ1KI3
+R6
+32
+R7
+!i10b 1
+R8
+R25
+R26
+!i113 1
+R11
+R12
+Etb_four_bit_adder
+Z27 w1485938922
+Z28 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R1
+R2
+R3
+Z29 8C:\ETDSPC\git\ETDSPC\MS_four_bit_adder\TB_four_bit_adder.vhd
+Z30 FC:\ETDSPC\git\ETDSPC\MS_four_bit_adder\TB_four_bit_adder.vhd
+l0
+L6
+VSCG3zMJ2VkFD`YX7RQ?@<0
+!s100 =:=akP4Kml:n7^[>8bPmC1
+R6
+32
+R18
+!i10b 1
+Z31 !s108 1485940388.000000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\ETDSPC\git\ETDSPC\MS_four_bit_adder\TB_four_bit_adder.vhd|
+Z33 !s107 C:\ETDSPC\git\ETDSPC\MS_four_bit_adder\TB_four_bit_adder.vhd|
+!i113 1
+R11
+R12
+Atestbench
+R14
+R28
+R1
+R2
+DEx4 work 17 tb_four_bit_adder 0 22 SCG3zMJ2VkFD`YX7RQ?@<0
+l12
+L9
+VH^ZMjAMJN[^bDYc8TiNho1
+!s100 cG5P[`6n`f[l=Mo?G[HMj1
+R6
+32
+R18
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R11
+R12
+Etb_four_bit_adder_textio
+Z34 w1485940319
+R28
+R1
+R2
+R3
+Z35 8C:/ETDSPC/git/ETDSPC/MS_four_bit_adder/TB_four_bit_adder_TEXTIO.vhd
+Z36 FC:/ETDSPC/git/ETDSPC/MS_four_bit_adder/TB_four_bit_adder_TEXTIO.vhd
+l0
+L9
+VTSk]YfYgdc:8aWc7Hli920
+!s100 X55RIcNjaj_X::7MNiMZi2
+R6
+32
+R18
+!i10b 1
+R31
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ETDSPC/git/ETDSPC/MS_four_bit_adder/TB_four_bit_adder_TEXTIO.vhd|
+Z38 !s107 C:/ETDSPC/git/ETDSPC/MS_four_bit_adder/TB_four_bit_adder_TEXTIO.vhd|
+!i113 1
+R11
+R12
+Atestbench
+R14
+R28
+R1
+R2
+DEx4 work 24 tb_four_bit_adder_textio 0 22 TSk]YfYgdc:8aWc7Hli920
+l15
+L12
+VS]?nD?cI3dJdDW^ZS_b3U1
+!s100 `;Z5;e5<jmlD<]:ERGU>[2
+R6
+32
+R18
+!i10b 1
+R31
+R37
+R38
+!i113 1
+R11
+R12

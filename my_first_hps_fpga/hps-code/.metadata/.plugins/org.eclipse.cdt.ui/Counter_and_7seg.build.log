@@ -1,0 +1,19 @@
+15:51:45 **** Incremental Build of configuration Debug for project Counter_and_7seg ****
+make all 
+'Building file: ../src/Counter_and_7seg.cpp'
+'Invoking: GCC C++ Compiler 4 [arm-linux-gnueabihf]'
+arm-linux-gnueabihf-g++ -O0 -g -Wall -c -fmessage-length=0 -std=gnu++11 -Dsoc_cv_av -ID:/intelFPGA/16.1/embedded/ip/altera/hps/altera_hps/hwlib/include/soc_cv_av   -ID:/intelFPGA/16.1/embedded/ip/altera/hps/altera_hps/hwlib/include/ -MMD -MP -MF"src/Counter_and_7seg.d" -MT"src/Counter_and_7seg.d" -o "src/Counter_and_7seg.o" "../src/Counter_and_7seg.cpp"
+../src/Counter_and_7seg.cpp: In function 'int main()':
+../src/Counter_and_7seg.cpp:48:123: warning: pointer of type 'void *' used in arithmetic [-Wpointer-arith]
+  counter=virtual_base + ( ( unsigned long  )( ALT_LWFPGASLVS_OFST + UPCOUNTER_0_BASE ) & ( unsigned long)( HW_REGS_MASK ) );
+                                                                                                                           ^
+'Finished building: ../src/Counter_and_7seg.cpp'
+' '
+'Building target: Counter_and_7seg'
+'Invoking: GCC C++ Linker 4 [arm-linux-gnueabihf]'
+arm-linux-gnueabihf-g++  -o "Counter_and_7seg"  ./src/Counter_and_7seg.o   
+'Finished building target: Counter_and_7seg'
+' '
+
+15:51:47 Build Finished (took 1s.797ms)
+

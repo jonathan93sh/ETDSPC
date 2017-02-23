@@ -1,0 +1,59 @@
+C:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_seven_seg_four_digit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_seven_seg_four_digit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mm_bus_seven_seg_four_digit
+-- Compiling architecture behaviour of mm_bus_seven_seg_four_digit
+-- Loading entity bin2sevenseg
+
+} {} {}} C:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_seven_seg_four_digit_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_seven_seg_four_digit_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package sim_avalon
+-- Compiling entity mm_bus_seven_seg_four_digit_tb
+-- Compiling architecture tb of mm_bus_seven_seg_four_digit_tb
+
+} {} {}} C:/ETDSPC/git/ETDSPC/exercise_mm_bus/sim_avalon.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\ETDSPC\git\ETDSPC\exercise_mm_bus\sim_avalon.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package sim_avalon
+-- Compiling package body sim_avalon
+-- Loading package sim_avalon
+
+} {} {}} C:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_counter.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\ETDSPC\git\ETDSPC\exercise_mm_bus\mm_bus_counter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mm_bus_counter
+-- Compiling architecture behaviour of mm_bus_counter
+
+} {} {}} C:/ETDSPC/git/ETDSPC/exercise_mm_bus/mm_bus_counter_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\ETDSPC\git\ETDSPC\exercise_mm_bus\mm_bus_counter_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package sim_avalon
+-- Compiling entity mm_bus_counter_tb
+-- Compiling architecture tb of mm_bus_counter_tb
+
+} {} {}} C:/ETDSPC/git/ETDSPC/exercise_mm_bus/bin2sevenseg.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ETDSPC/git/ETDSPC/exercise_mm_bus/bin2sevenseg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity bin2sevenseg
+-- Compiling architecture behavioural of bin2sevenseg
+
+} {} {}}

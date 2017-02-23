@@ -1,0 +1,347 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/ETDSPC/git/ETDSPC/IIS2ST
+Eaudio_system
+Z0 w1487753263
+Z1 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer
+Z6 8C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/audio_system.vhd
+Z7 FC:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/audio_system.vhd
+l0
+L8
+V<[15O>@M4bPaO5Sim[e[N0
+!s100 FB`4In>zJVb4Rn2R8[B`F3
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1487767949
+!i10b 1
+Z10 !s108 1487767949.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/audio_system.vhd|
+Z12 !s107 C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/audio_system.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Aarch
+Z15 DEx4 work 14 elastic_buffer 0 22 UIA5VCg>3n?TNANE7Wf4L0
+Z16 DEx4 work 6 iis2st 0 22 O[h>_@m1:z;DP3BlF[_EU3
+Z17 DEx4 work 9 clock_gen 0 22 4MG7Uo1W1hI2o57K@k2nd0
+R1
+R2
+R3
+R4
+DEx4 work 12 audio_system 0 22 <[15O>@M4bPaO5Sim[e[N0
+l74
+L30
+V89SnBUEMcba<daY^9`=]<0
+!s100 XcT9b1A:LS:3Ok12=aTY?1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Eclock_gen
+R0
+R1
+R2
+R3
+R4
+R5
+Z18 8C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/clock_gen.vhd
+Z19 FC:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/clock_gen.vhd
+l0
+L8
+V4MG7Uo1W1hI2o57K@k2nd0
+!s100 1lf:Zf8GIFikcN0iKmzC13
+R8
+32
+R9
+!i10b 1
+R10
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/clock_gen.vhd|
+Z21 !s107 C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/clock_gen.vhd|
+!i113 1
+R13
+R14
+Aarch
+R1
+R2
+R3
+R4
+R17
+l22
+L19
+V`If4^_ViPLdbbRQCA9Bj]1
+!s100 hBPPO3>oZLA9MZS9ZRc?H0
+R8
+32
+R9
+!i10b 1
+R10
+R20
+R21
+!i113 1
+R13
+R14
+Eelastic_buffer
+Z22 w1487760106
+R2
+R3
+R4
+R5
+Z23 8C:\ETDSPC\git\ETDSPC\de1_soc_slip_buffer\audio_system\elastic_buffer.vhd
+Z24 FC:\ETDSPC\git\ETDSPC\de1_soc_slip_buffer\audio_system\elastic_buffer.vhd
+l0
+L5
+VUIA5VCg>3n?TNANE7Wf4L0
+!s100 nzEF2ULjnBD;j9KU83JiT3
+R8
+32
+Z25 !s110 1487767950
+!i10b 1
+Z26 !s108 1487767950.000000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\ETDSPC\git\ETDSPC\de1_soc_slip_buffer\audio_system\elastic_buffer.vhd|
+Z28 !s107 C:\ETDSPC\git\ETDSPC\de1_soc_slip_buffer\audio_system\elastic_buffer.vhd|
+!i113 1
+R13
+R14
+Abehaviour
+Z29 DEx4 work 17 push_synchronizer 0 22 S]T=P38bbQa:lofkaUlLX2
+R2
+R3
+R4
+R15
+l61
+L39
+VIXOLBz:aLF1Q4AY<JNz?83
+!s100 NG4E`BG4:U]b9iYe1_?I@1
+R8
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R13
+R14
+Eiis2st
+R0
+R2
+R3
+R4
+R5
+Z30 8C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/iis2st.vhd
+Z31 FC:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/iis2st.vhd
+l0
+L5
+VO[h>_@m1:z;DP3BlF[_EU3
+!s100 g5Qc7R6aeP?m03;FTXP4e1
+R8
+32
+R25
+!i10b 1
+R26
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/iis2st.vhd|
+Z33 !s107 C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/iis2st.vhd|
+!i113 1
+R13
+R14
+Artl
+R2
+R3
+R4
+R16
+l105
+L93
+V@Y0CL=A6KZ2N9@8U4jH]D0
+!s100 i6nVh^REUVEj06T;]M_bW0
+R8
+32
+R25
+!i10b 1
+R26
+R32
+R33
+!i113 1
+R13
+R14
+Afunctional
+R2
+R3
+R4
+R16
+l38
+L36
+VXP0l[l_FITe;F7fk=>j2j3
+!s100 ^ZSMMLU;OWSMdBW7j;5f93
+R8
+32
+R25
+!i10b 1
+R26
+R32
+R33
+!i113 1
+R13
+R14
+Eiis2st_tb
+R0
+R2
+R3
+R4
+R5
+8C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/iis2st_tb.vhd
+FC:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/iis2st_tb.vhd
+l0
+L5
+Vglb`z`MXc<<Bf14;okQNX3
+!s100 M0UK_M?EMh>QHUNPdoO<42
+R8
+32
+!s110 1487759676
+!i10b 1
+!s108 1487759676.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/iis2st_tb.vhd|
+!s107 C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/iis2st_tb.vhd|
+!i113 1
+R13
+R14
+Epush_synchronizer
+Z34 w1487767873
+R2
+R3
+R4
+R5
+Z35 8C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/push_synchronizer.vhd
+Z36 FC:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/push_synchronizer.vhd
+l0
+L6
+VS]T=P38bbQa:lofkaUlLX2
+!s100 Aecfh9Pk3Zn4NBCBiD=mN2
+R8
+32
+Z37 !s110 1487767951
+!i10b 1
+R26
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/push_synchronizer.vhd|
+Z39 !s107 C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/push_synchronizer.vhd|
+!i113 1
+R13
+R14
+Artl
+R2
+R3
+R4
+R29
+l50
+L23
+VhIVO3:a_U8bEo?`2GEOUc3
+!s100 6GRzbE9=ifMAbEN71T^K50
+R8
+32
+R37
+!i10b 1
+R26
+R38
+R39
+!i113 1
+R13
+R14
+Etb_clock_gen
+R0
+R2
+R3
+R4
+R5
+Z40 8C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/clock_gen_tb.vhd
+Z41 FC:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/clock_gen_tb.vhd
+l0
+L7
+V1OomUSN_YizcbH6CEInQM3
+!s100 EHT5Y[BSdG0edVgI=KoYa1
+R8
+32
+R25
+!i10b 1
+R10
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/clock_gen_tb.vhd|
+Z43 !s107 C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/clock_gen_tb.vhd|
+!i113 1
+R13
+R14
+Atb
+R2
+R3
+R4
+DEx4 work 12 tb_clock_gen 0 22 1OomUSN_YizcbH6CEInQM3
+l28
+L10
+VMl89DSXTTEn^IS2j]4@Li3
+!s100 Nh8KE8PBJ9KV`50[4Lg7o2
+R8
+32
+R25
+!i10b 1
+R10
+R42
+R43
+!i113 1
+R13
+R14
+Etb_elastic_buffer
+Z44 w1487766865
+R2
+R3
+R4
+R5
+Z45 8C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/elastic_buffer_tb.vhd
+Z46 FC:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/elastic_buffer_tb.vhd
+l0
+L7
+V9>_U;bJ1;Oa2mW3zX3=;b3
+!s100 [VF^z9@lg1aPd;Q`TQ0b03
+R8
+32
+R25
+!i10b 1
+R26
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/elastic_buffer_tb.vhd|
+Z48 !s107 C:/ETDSPC/git/ETDSPC/de1_soc_slip_buffer/audio_system/elastic_buffer_tb.vhd|
+!i113 1
+R13
+R14
+Abhv
+R15
+R2
+R3
+R4
+DEx4 work 17 tb_elastic_buffer 0 22 9>_U;bJ1;Oa2mW3zX3=;b3
+l41
+L13
+VQVHidMbZWRfVaVCb5^2KH0
+!s100 kWQVd[]FJAcIn;Z9NjN?`2
+R8
+32
+R25
+!i10b 1
+R26
+R47
+R48
+!i113 1
+R13
+R14

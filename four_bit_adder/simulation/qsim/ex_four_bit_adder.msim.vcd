@@ -1,0 +1,142 @@
+$comment
+	File created using the following command:
+		vcd file ex_four_bit_adder.msim.vcd -direction
+$end
+$date
+	Wed Jan 25 11:05:01 2017
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module ex_four_bit_adder_vhd_vec_tst $end
+$var wire 1 ! LEDR [4] $end
+$var wire 1 " LEDR [3] $end
+$var wire 1 # LEDR [2] $end
+$var wire 1 $ LEDR [1] $end
+$var wire 1 % LEDR [0] $end
+$var wire 1 & SW [7] $end
+$var wire 1 ' SW [6] $end
+$var wire 1 ( SW [5] $end
+$var wire 1 ) SW [4] $end
+$var wire 1 * SW [3] $end
+$var wire 1 + SW [2] $end
+$var wire 1 , SW [1] $end
+$var wire 1 - SW [0] $end
+
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var wire 1 1 devoe $end
+$var wire 1 2 devclrn $end
+$var wire 1 3 devpor $end
+$var wire 1 4 ww_devoe $end
+$var wire 1 5 ww_devclrn $end
+$var wire 1 6 ww_devpor $end
+$var wire 1 7 ww_SW [7] $end
+$var wire 1 8 ww_SW [6] $end
+$var wire 1 9 ww_SW [5] $end
+$var wire 1 : ww_SW [4] $end
+$var wire 1 ; ww_SW [3] $end
+$var wire 1 < ww_SW [2] $end
+$var wire 1 = ww_SW [1] $end
+$var wire 1 > ww_SW [0] $end
+$var wire 1 ? ww_LEDR [4] $end
+$var wire 1 @ ww_LEDR [3] $end
+$var wire 1 A ww_LEDR [2] $end
+$var wire 1 B ww_LEDR [1] $end
+$var wire 1 C ww_LEDR [0] $end
+$var wire 1 D \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 E \SW[0]~input_o\ $end
+$var wire 1 F \SW[4]~input_o\ $end
+$var wire 1 G \fba|FA0|ha1|sum~combout\ $end
+$var wire 1 H \SW[1]~input_o\ $end
+$var wire 1 I \SW[5]~input_o\ $end
+$var wire 1 J \fba|FA1|ha2|sum~combout\ $end
+$var wire 1 K \SW[2]~input_o\ $end
+$var wire 1 L \SW[6]~input_o\ $end
+$var wire 1 M \fba|FA2|ha2|sum~combout\ $end
+$var wire 1 N \SW[3]~input_o\ $end
+$var wire 1 O \SW[7]~input_o\ $end
+$var wire 1 P \fba|FA1|carry~combout\ $end
+$var wire 1 Q \fba|FA3|ha2|sum~combout\ $end
+$var wire 1 R \fba|FA3|carry~combout\ $end
+$var wire 1 S \fba|FA1|ALT_INV_carry~combout\ $end
+$var wire 1 T \ALT_INV_SW[4]~input_o\ $end
+$var wire 1 U \ALT_INV_SW[0]~input_o\ $end
+$var wire 1 V \ALT_INV_SW[1]~input_o\ $end
+$var wire 1 W \ALT_INV_SW[5]~input_o\ $end
+$var wire 1 X \ALT_INV_SW[2]~input_o\ $end
+$var wire 1 Y \ALT_INV_SW[6]~input_o\ $end
+$var wire 1 Z \ALT_INV_SW[3]~input_o\ $end
+$var wire 1 [ \ALT_INV_SW[7]~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0.
+1/
+x0
+11
+12
+13
+14
+15
+16
+xD
+1E
+0F
+1G
+1H
+1I
+0J
+1K
+0L
+0M
+0N
+1O
+1P
+0Q
+1R
+0S
+1T
+0U
+0V
+0W
+0X
+1Y
+1Z
+0[
+1&
+0'
+1(
+0)
+0*
+1+
+1,
+1-
+1!
+0"
+0#
+0$
+1%
+17
+08
+19
+0:
+0;
+1<
+1=
+1>
+1?
+0@
+0A
+0B
+1C
+$end
+#1000000
